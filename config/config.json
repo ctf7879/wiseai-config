@@ -1,0 +1,74 @@
+{
+  "version": "0.1.0126",
+  "settings": {
+    "maxHistory": 3,
+    "maxErrorLogs": 100,
+    "defaultPlatforms": ["deepseek", "qianwen"],
+    "platformOrder": ["deepseek", "qianwen", "yiyan", "kimi", "hailuo"],
+    "delays": {
+      "pageLoad": 1000,
+      "retry": 1000,
+      "betweenAIs": 500,
+      "afterInput": 200,
+      "afterPaste": 200
+    }
+  },
+  "contact": {
+    "qrcode": "https://vip.123pan.cn/1812679555/ymjew503t0l000d6xujz7kbo0exb0iaeDIYPDqQ0BIJyAGxxAdev.png",
+    "qrcodeText": "扫码联系开发者\n交流你的天马行空",
+    "bilibili": {
+      "url": "https://space.bilibili.com/1666273687",
+      "text": "求求来个免费的关注"
+    }
+  },
+  "platforms": {
+    "deepseek": {
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com",
+      "inputHint": "给 DeepSeek 发送消息 输入 对话"
+    },
+    "qianwen": {
+      "name": "通义千问",
+      "url": "https://tongyi.aliyun.com/qianwen",
+      "inputHint": "千事不决问通义 输入 发送 对话",
+      "selectors": {
+        "input": "#q-input, .input-box textarea, textarea[placeholder*='千事不决问通义']",
+        "send": ".submit-btn, button[type='submit']"
+      }
+    },
+    "yiyan": {
+      "name": "文心一言",
+      "url": "https://yiyan.baidu.com",
+      "inputHint": "输入问题 发送消息 对话",
+      "selectors": {
+        "input": "#searchInput, .input-container textarea, div[contenteditable='true']",
+        "send": ".send-btn, button[type='submit']"
+      }
+    },
+    "kimi": {
+      "name": "Kimi",
+      "url": "https://kimi.moonshot.cn",
+      "inputHint": "输入问题 探索 搜索",
+      "selectors": {
+        "input": "textarea[placeholder*='输入问题'], textarea[placeholder*='探索'], textarea[placeholder*='搜索']",
+        "send": "button[type='submit'], button.send-button"
+      }
+    },
+    "hailuo": {
+      "name": "海螺AI",
+      "url": "https://hailuoai.com",
+      "inputHint": "有问题 尽管问 内容再长也不在话下"
+    }
+  },
+  "ui": {
+    "textarea": {
+      "placeholder": "请在此输入想问的问题...\n\n你的问题将同时发送到所选的AI平台"
+    },
+    "buttons": {
+      "submit": "发送到所选平台",
+      "settings": "设置",
+      "add": "添加",
+      "refresh": "更新配置"
+    }
+  }
+}
