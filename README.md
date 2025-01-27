@@ -1,1 +1,1 @@
-# wiseai-config
+慧智ai浏览器插件配置文件仓库
